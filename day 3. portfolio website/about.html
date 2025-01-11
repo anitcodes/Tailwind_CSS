@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | tailwind css</title>
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        ::selection {
+            background-color: #9775FA;
+            color: #1B1F22;
+        }
+    </style>
+</head>
+
+<body class="bg-[#1B1F22] text-white">
+    <!-- navbar section -->
+    <nav class="h-20 flex items-center justify-end pr-40">
+        <ul class="flex items-center gap-10 text-white font-bold text-base uppercase cursor-pointer">
+            <a href="index.html">
+                <li class=" hover:text-[#9775FA] transition-all duration-300">Home</li>
+            </a>
+            <a href="about.html">
+                <li class=" hover:text-[#9775FA] transition-all duration-300">About Me</li>
+            </a>
+            <a href="project.html">
+                <li class=" hover:text-[#9775FA] transition-all duration-300">Projects</li>
+            </a>
+
+            <button
+                class="px-5 py-2 bg-[#9775FA] text-white border-2 rounded-xl hover:bg-transparent hover:text-[#9775FA] hover:border-2 hover:border-[#9775FA] transition-all duration-300">Hire
+                Me</button>
+        </ul>
+    </nav>
+
+    <!-- about section -->
+    <div class="h-[calc(100vh-80px)] flex flex-col px-40 pt-4">
+        <div class="header uppercase text-6xl font-bold flex items-center gap-6">
+            <div class="hd-rec flex flex-col gap-2">
+                <div class="h-5 w-[100px] bg-[#9775FA]"></div>
+                <div class="h-5 w-[150px] bg-[#313538] pt-2"></div>
+            </div>
+            <h1>About Me</h1>
+        </div>
+        <p class="text-2xl pt-10">👋 Hi there! I'm Anit a passionate web developer. I have a strong background in frontend
+            development using
+            React and typescript, as well as experience with various JavaScript and CSS libraries and frameworks such as
+            Next.JS and Tailwind. 🌐 In addition to my frontend expertise, I have a decent understanding of backend
+            technologies like Node.js and Express.js. This knowledge enables me to collaborate effectively with backend
+            teams, bridging the gap between the front and back ends of web development projects. 🚀 I'm excited to
+            continue my journey in the tech world, eager to learn and contribute to innovative projects. Let's connect
+            and explore opportunities together!</p>
+
+        <section class="skill flex flex-col pt-10">
+            <h1 class="uppercase text-4xl font-bold">stuff i know :</h1>
+            <div class="skill-itms flex gap-10 pt-10 text-6xl animate-bounce">
+                <i class="ri-html5-fill text-[#DD4B24] cursor-pointer"></i>
+                <i class="ri-css3-fill text-[#016DB5] cursor-pointer"></i>
+                <i class="ri-tailwind-css-fill text-[#47AAAD] cursor-pointer"></i>
+                <i class="ri-bootstrap-fill text-[#8411F6] cursor-pointer"></i>
+                <i class="ri-javascript-fill text-[#F7DF1E] cursor-pointer"></i>
+                <i class="ri-github-fill text-[#3b5998] cursor-pointer"></i>
+            </div>
+        </section>
+    </div>

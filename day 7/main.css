@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply bg-green-300 p-2 m-2 w-20 flex items-center justify-center rounded-lg cursor-pointer hover:bg-green-400; 
+}

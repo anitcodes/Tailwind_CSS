@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | tailwind css</title>
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        ::selection {
+            background-color: #9775FA;
+            color: #1B1F22;
+        }
+    </style>
+</head>
+
+<body class="bg-[#1B1F22] text-white">
+    <!-- navbar section -->
+    <nav class="h-20 flex items-center justify-end pr-40">
+        <ul class="flex items-center gap-10 text-white font-bold text-base uppercase cursor-pointer">
+            <a href="index.html">
+                <li class=" hover:text-[#9775FA] transition-all duration-300">Home</li>
+            </a>
+            <a href="about.html">
+                <li class=" hover:text-[#9775FA] transition-all duration-300">About Me</li>
+            </a>
+            <a href="project.html">
+                <li class=" hover:text-[#9775FA] transition-all duration-300">Projects</li>
+            </a>
+            <button
+                class="px-5 py-2 bg-[#9775FA] text-white border-2 rounded-xl hover:bg-transparent hover:text-[#9775FA] hover:border-2 hover:border-[#9775FA] transition-all duration-300">Hire
+                Me</button>
+        </ul>
+    </nav>
+
+    <!-- project section -->
+    <div class="h-[calc(100vh-80px)] flex flex-col px-40 pt-4">
+        <div class="header uppercase text-6xl font-bold flex items-center gap-6">
+            <div class="hd-rec flex flex-col gap-2">
+                <div class="h-5 w-[100px] bg-[#9775FA]"></div>
+                <div class="h-5 w-[150px] bg-[#313538] pt-2"></div>
+            </div>
+            <h1>My Projects</h1>
+        </div>
+
+        <!-- project-container -->
+        <div class="pj-container min-h-max my-10 flex flex-wrap justify-center gap-10">
+            <div class="project h-[300px] w-[500px] bg-[url('./assets/pj1.png')] bg-center bg-cover mt-10 border border-1 border-white cursor-pointer brightness-75 hover:brightness-95 delay-75"
+                aria-label="Project image">
+                <div class="pj-txt flex gap-10 text-3xl pt-[250px] pl-10">
+                    <h5>Project 1</h5>
+                    <i class="ri-github-fill text-[#fff] cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="project h-[300px] w-[500px] bg-[url('./assets/pj2.png')] bg-center bg-cover mt-10 border border-1 border-white cursor-pointer brightness-75 hover:brightness-95 delay-75"
+                aria-label="Project image">
+                <div class="pj-txt flex gap-10 text-3xl pt-[250px] pl-10">
+                    <h5>Project 2</h5>
+                    <i class="ri-github-fill text-[#fff] cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="project h-[300px] w-[500px] bg-[url('./assets/pj3.png')] bg-center bg-cover border border-1 border-white cursor-pointer brightness-75 hover:brightness-95 delay-75"
+                aria-label="Project image">
+                <div class="pj-txt flex gap-10 text-3xl pt-[250px] pl-10">
+                    <h5>Project 3</h5>
+                    <i class="ri-github-fill text-[#fff] cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="project h-[300px] w-[500px] bg-[url('./assets/pj4.png')] bg-center bg-cover border border-1 border-white cursor-pointer brightness-75 hover:brightness-95 delay-75"
+                aria-label="Project image">
+                <div class="pj-txt flex gap-10 text-3xl pt-[250px] pl-10">
+                    <h5>Project 4</h5>
+                    <i class="ri-github-fill text-[#fff] cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="project h-[300px] w-[500px] bg-[url('./assets/pj5.png')] bg-center bg-cover border border-1 border-white cursor-pointer brightness-75 hover:brightness-95 delay-75"
+                aria-label="Project image">
+                <div class="pj-txt flex gap-10 text-3xl pt-[250px] pl-10">
+                    <h5>Project 5</h5>
+                    <i class="ri-github-fill text-[#fff] cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="project h-[300px] w-[500px] bg-[url('./assets/pj6.png')] bg-center bg-cover border border-1 border-white cursor-pointer brightness-75 hover:brightness-95 delay-75"
+                aria-label="Project image">
+                <div class="pj-txt flex gap-10 text-3xl pt-[250px] pl-10">
+                    <h5>Project 6</h5>
+                    <i class="ri-github-fill text-[#fff] cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="project h-[300px] w-[500px] bg-[url('./assets/pj7.png')] bg-center bg-cover border border-1 border-white cursor-pointer brightness-75 hover:brightness-95 delay-75"
+                aria-label="Project image">
+                <div class="pj-txt flex gap-10 text-3xl pt-[250px] pl-10">
+                    <h5 class="text-black">Project 7</h5>
+                    <i class="ri-github-fill text-[#000] cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="project h-[300px] w-[500px] bg-[url('./assets/pj8.png')] bg-center bg-cover border border-1 border-white cursor-pointer brightness-75 hover:brightness-95 delay-75"
+                aria-label="Project image">
+                <div class="pj-txt flex gap-10 text-3xl pt-[250px] pl-10">
+                    <h5 class="text-black">Project 8</h5>
+                    <i class="ri-github-fill text-[#000] cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="project h-[300px] w-[500px] bg-[url('./assets/pj9.png')] bg-center bg-cover mb-10 border border-1 border-white cursor-pointer brightness-75 hover:brightness-95 delay-75"
+                aria-label="Project image">
+                <div class="pj-txt flex gap-10 text-3xl pt-[250px] pl-10">
+                    <h5 class="text-black">Project 9</h5>
+                    <i class="ri-github-fill text-[#000] cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="project h-[300px] w-[500px] bg-[url('./assets/pj10.png')] bg-center bg-cover mb-10 border border-1 border-white cursor-pointer brightness-75 hover:brightness-95 delay-75"
+                aria-label="Project image">
+                <div class="pj-txt flex gap-10 text-3xl pt-[250px] pl-10">
+                    <h5 class="text-black">Project 10</h5>
+                    <i class="ri-github-fill text-[#000] cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

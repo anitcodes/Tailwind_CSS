@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 4 | responsive portfolio | tailwind css</title>
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-[#F5F5F5]">
+    <!-- First going through mobile first approach -->
+
+    <div class="h-screen w-full bg-fixed bg-cover bg-center bg-[url('./assets/bg.jpg')] backdrop-brightness-0">
+        <!-- Your content here -->
+
+        <!-- navbar section -->
+        <nav class="py-4 px-10 flex justify-between md:px-20">
+            <ul class="flex justify-between items-center text-xl font-bold">
+                <li class="uppercase text-white  md:text-3xl md:order-2">
+                    <span class="text-[#59ADFF]">home</span>script
+                </li>
+            </ul>
+
+            <div class="menu md:hidden">
+                <i class="ri-menu-line bg-[#59ADFF] py-1 px-2 md:order-1 "></i>
+            </div>
+
+
+            <div class="nav-content hidden md:block">
+                <ul class="flex items-center gap-6 px-20 text-white text-xl">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Blog</li>
+                    <button
+                        class="uppercase py-1 px-6 flex items-center rounded bg-blue-500 text-base hover:bg-white hover:text-black">let's
+                        build your
+                        next project</button>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- hero section -->
+
+        <div class="hero-cnt w-auto md:w-1/2 mx-10 my-40 md:mx-20 md:my-20">
+            <h1 class="font-bold text-white text-4xl leading-tight md:text-black mb-4 md:text-5xl md:pr-6 ">Empower Your
+                <br> Business with Digital Transformation
+            </h1>
+            <p class="md:text-xl">At HomeScript, we believe that every business deserves to thrive in the digital age.
+                That's why we're
+                dedicated to crafting custom solutions that will help your business grow and succeed.
+            </p>
+            <button
+                class="uppercase bg-blue-500 px-6 py-3 mt-20 text-white hover:bg-white hover:text-black md:mt-10">get
+                started</button>
+        </div>
+    </div>
+
+
+    <!-- About Section -->
+    <div class="about flex items-center flex-col mt-10">
+        <div class="flex flex-col items-center px-3">
+            <h1 class="text-3xl mb-2 md:font-bold md:text-5xl md:mb-6">How can we help you?</h1>
+            <p class="mb-10 md:w-[500px] text-center">Unlock the full potential of your online presence with our suite
+                of expert solutions, designed to help your business succeed.</p>
+        </div>
+
+        <div class="boxes flex flex-col flex-wrap gap-6 items-center mb-20 md:flex-row md:ml-[130px]">
+            <div class="box h-[280px] w-[350px] bg-white p-10 flex flex-col gap-4 rounded">
+                <h4>ICON</h4>
+                <h1 class="text-xl font-bold">Development</h1>
+                <p>Transform your vision into reality with our custom development solutions, designed to deliver
+                    intuitive and high-performing digital experiences</p>
+            </div>
+
+            <div class="box h-[280px] w-[350px] bg-white p-10 flex flex-col gap-4 rounded">
+                <h4>ICON</h4>
+                <h1 class="text-xl font-bold">Marketing</h1>
+                <p>Maximize your reach and engagement with our expert social media solutions, designed to elevate your
+                    brand and connect you with your audience.</p>
+            </div>
+
+            <div class="box h-[280px] w-[350px] bg-white p-10 flex flex-col gap-4 rounded">
+                <h4>ICON</h4>
+                <h1 class="text-xl font-bold">Social Media</h1>
+                <p>Let us help you achieve success with tailored solutions to fit your unique needs.</p>
+            </div>
+
+            <div class="box h-[280px] w-[350px] bg-white p-10 flex flex-col gap-4 rounded">
+                <h4>ICON</h4>
+                <h1 class="text-xl font-bold">eCommerce</h1>
+                <p>Empower your business with our ecommerce solutions, crafted to streamline your operations, optimize
+                    your sales, and enhance your customer experience.</p>
+            </div>
+
+            <div class="box h-[280px] w-[350px] bg-white p-10 flex flex-col gap-4 rounded">
+                <h4>ICON</h4>
+                <h1 class="text-xl font-bold">Help & Support</h1>
+                <p>Rely on our dedicated support team to help you every step of the way, with expert guidance, timely
+                    solutions, and exceptional service that puts your needs first.</p>
+            </div>
+
+            <div class="box h-[280px] w-[350px] bg-white p-10 flex flex-col gap-4 rounded">
+                <h4>ICON</h4>
+                <h1 class="text-xl font-bold">Design</h1>
+                <p>Elevate your brand with our creative design solutions, crafted to captivate your audience and leave a
+                    lasting impression.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="portf bg-white pt-20">
+        <div class="flex flex-col items-center px-3">
+            <h1 class="text-3xl mb-2 md:font-bold md:text-5xl md:mb-6">Portfolio</h1>
+            <p class="mb-10 md:w-[600px] text-center">Take a look at our portfolio to see how our expert solutions have
+                helped our clients achieve their goals and elevate their online presence.</p>
+        </div>
+
+        <div class="pp-bx flex flex-col gap-2 items-center mb-10 md:flex-row md:ml-[200px]">
+            <a href="anitcodes.github.io/portfolio"><div class="hover:opacity-75 h-[200px] w-[300px] cursor-pointer bg-cover bg-center bg-[url('https://images.pexels.com/photos/670720/pexels-photo-670720.jpeg')]"></div></a>
+            <a href="sudipdahal1.com.np"><div class="hover:opacity-75 h-[200px] w-[300px] cursor-pointer bg-cover bg-top bg-[url('https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]"></div></a>
+            <a href="#"><div class="hover:opacity-75 h-[200px] w-[300px] cursor-pointer bg-cover bg-top bg-[url('https://images.pexels.com/photos/1270076/pexels-photo-1270076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]"></div></a>
+        </div>
+    </div>
+</body>
+
+</html>
